@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Register Form</title>
+    <meta name="description" content="Clean, simple, copy-paste-ready register form with validation.">
+    <meta name="author" content="Aigars Silkalns / Colorlib">
+    <link rel="canonical" href="https://puikinsh.github.io/login-forms/forms/basic-register/">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%236366f1'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='white' font-family='system-ui,sans-serif'>R</text></svg>">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Basic Register Form">
+    <meta property="og:description" content="Clean, simple, copy-paste-ready register form with validation.">
+    <meta property="og:url" content="https://puikinsh.github.io/login-forms/forms/basic-register/">
+    <meta property="og:image" content="https://puikinsh.github.io/login-forms/assets/screenshots/basic.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Basic Register Form">
+    <meta name="twitter:description" content="Clean, simple, copy-paste-ready register form with validation.">
+    <meta name="twitter:image" content="https://puikinsh.github.io/login-forms/assets/screenshots/basic.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h2>Create Account</h2>
+                <p>Get started with your free account today</p>
+            </div>
+            
+            <form class="login-form" id="registerForm" novalidate>
+                <!-- Full Name Input -->
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="text" id="name" name="name" required autocomplete="name">
+                        <label for="name">Full Name</label>
+                    </div>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <!-- Email Input -->
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <!-- Password Input -->
+                <div class="form-group">
+                    <div class="input-wrapper password-wrapper">
+                        <input type="password" id="password" name="password" required autocomplete="new-password">
+                        <label for="password">Password</label>
+                        <button type="button" class="password-toggle" id="passwordToggle" aria-label="Toggle password visibility">
+                            <span class="eye-icon"></span>
+                        </button>
+                    </div>
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <!-- Confirm Password Input -->
+                <div class="form-group">
+                    <div class="input-wrapper password-wrapper">
+                        <input type="password" id="confirmPassword" name="confirmPassword" required autocomplete="new-password">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <button type="button" class="password-toggle" id="confirmPasswordToggle" aria-label="Toggle confirm password visibility">
+                            <span class="eye-icon"></span>
+                        </button>
+                    </div>
+                    <span class="error-message" id="confirmPasswordError"></span>
+                </div>
+
+                <!-- Terms and Conditions checkbox -->
+                <div class="form-options">
+                    <label class="remember-wrapper">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span class="checkbox-label">
+                            <span class="checkmark"></span>
+                            I agree to the <a href="#" style="color: #6366f1; text-decoration: underline; margin-left: 3px;">Terms & Conditions</a>
+                        </span>
+                    </label>
+                </div>
+
+                <button type="submit" class="login-btn">
+                    <span class="btn-text">Sign Up</span>
+                    <span class="btn-loader"></span>
+                </button>
+            </form>
+
+            <div class="signup-link">
+                <p>Already have an account? <a href="login.html">Sign In</a></p>
+            </div>
+
+            <div class="success-message" id="successMessage">
+                <div class="success-icon">✓</div>
+                <h3>Registration Successful!</h3>
+                <p>Your account has been created. Redirecting...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../shared/js/form-utils.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+            <div class="signup-link">
+                <p>Don't have an account? <a href="#">Create one</a></p>
+            </div>
+
+            <div class="success-message" id="successMessage">
+                <div class="success-icon">✓</div>
+                <h3>Login Successful!</h3>
+                <p>Redirecting to your dashboard...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../shared/js/form-utils.js"></script>
+    <script src="script.js"></script>
+<script src="js/register.js"></script>
+</body>
+  </html>
