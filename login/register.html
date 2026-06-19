@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Register Form</title>
+    <title>Daftar web-apasih</title>
     <meta name="description" content="Clean, simple, copy-paste-ready register form with validation.">
     <meta name="author" content="Aigars Silkalns / Colorlib">
     <link rel="canonical" href="https://puikinsh.github.io/login-forms/forms/basic-register/">
@@ -23,25 +23,25 @@
     <div class="login-container">
         <div class="login-card">
             <div class="login-header">
-                <h2>Create Account</h2>
-                <p>Get started with your free account today</p>
+                <h2>Buat akun</h2>
+                <p>Mulailah dengan mengisi data berikut</p>
             </div>
             
             <form class="login-form" id="registerForm" novalidate>
                 <!-- Full Name Input -->
                 <div class="form-group">
                     <div class="input-wrapper">
-                        <input type="text" id="name" name="name" required autocomplete="name">
-                        <label for="name">Full Name</label>
+                        <input type="username" id="username" name="username" required autocomplete="username">
+                        <label for="username">username</label>
                     </div>
-                    <span class="error-message" id="nameError"></span>
+                    <span class="error-message" id="usernameError"></span>
                 </div>
 
                 <!-- Email Input -->
                 <div class="form-group">
                     <div class="input-wrapper">
                         <input type="email" id="email" name="email" required autocomplete="email">
-                        <label for="email">Email Address</label>
+                        <label for="email">Alamat email</label>
                     </div>
                     <span class="error-message" id="emailError"></span>
                 </div>
@@ -62,7 +62,7 @@
                 <div class="form-group">
                     <div class="input-wrapper password-wrapper">
                         <input type="password" id="confirmPassword" name="confirmPassword" required autocomplete="new-password">
-                        <label for="confirmPassword">Confirm Password</label>
+                        <label for="confirmPassword">Pastikan password</label>
                         <button type="button" class="password-toggle" id="confirmPasswordToggle" aria-label="Toggle confirm password visibility">
                             <span class="eye-icon"></span>
                         </button>
@@ -76,47 +76,32 @@
                         <input type="checkbox" id="terms" name="terms" required>
                         <span class="checkbox-label">
                             <span class="checkmark"></span>
-                            I agree to the <a href="#" style="color: #6366f1; text-decoration: underline; margin-left: 3px;">Terms & Conditions</a>
+                            Saya setuju dengan <a href="#" style="color: #6366f1; text-decoration: underline; margin-left: 3px;">kebijakan & privasi</a>
                         </span>
                     </label>
                 </div>
 
                 <button type="submit" class="login-btn">
-                    <span class="btn-text">Sign Up</span>
+                    <span class="btn-text">Daftar</span>
                     <span class="btn-loader"></span>
                 </button>
             </form>
 
             <div class="signup-link">
-                <p>Already have an account? <a href="login.html">Sign In</a></p>
+                <p>Punya akun? <a href="login.html">Masuk</a></p>
             </div>
 
             <div class="success-message" id="successMessage">
                 <div class="success-icon">✓</div>
-                <h3>Registration Successful!</h3>
-                <p>Your account has been created. Redirecting...</p>
+                <h3>Daftar berhasil!</h3>
+                <p>Menuju web...</p>
             </div>
         </div>
     </div>
 
     <script src="../../shared/js/form-utils.js"></script>
     <script src="script.js"></script>
+    <script src="js/register.js"></script>
 </body>
 </html>
-            <div class="signup-link">
-                <p>Don't have an account? <a href="#">Create one</a></p>
-            </div>
-
-            <div class="success-message" id="successMessage">
-                <div class="success-icon">✓</div>
-                <h3>Login Successful!</h3>
-                <p>Redirecting to your dashboard...</p>
-            </div>
-        </div>
-    </div>
-
-    <script src="../../shared/js/form-utils.js"></script>
-    <script src="script.js"></script>
-<script src="js/register.js"></script>
-</body>
-  </html>
+          
